@@ -1,0 +1,62 @@
+<!-- 
+   <div class="tasks-container">
+    <button (click)="toggleTasks()">Toggle</button>
+    <button (click)="showAllTasks()">All Tasks</button>
+
+  
+    <table>
+      Table header
+      <thead>
+        <tr>
+          <th></th>
+          <th>UserId</th>
+          <th>Id</th>
+          <th>Title</th>
+          <th>Completed or Not</th>
+        </tr>
+      </thead>
+       Table body
+      <tbody>
+         Loop through tasks and display them 
+        <tr *ngFor="let task of filteredTasks">
+          <td><button (click)="viewTaskDetails.emit(task.id)">View</button></td>
+          <td>{{ task.userId }}</td>
+          <td>{{ task.id }}</td>
+          <td>{{ task.title }}</td>
+          <td>{{ task.completed ? 'Yes' : 'No' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+   -->
+   <div class="tasks-container">
+    <button class="toggle-button" (click)="toggleTasks()">Toggle</button>
+    <button (click)="showAllTasks()">All Tasks</button>
+  
+    <table>
+      <!-- Table header -->
+      <thead>
+        <tr>
+          <th></th>
+          <th>UserId</th>
+          <th>Id</th>
+          <th>Title</th>
+          <th>Completed or Not</th>
+        </tr>
+      </thead>
+      <!-- Table body -->
+      <tbody>
+        <!-- Loop through tasks and display them -->
+        
+        <tr *ngFor="let task of filteredTasks" [class.completed]="task.completed" [class.not-completed]="!task.completed">
+            <td><button (click)="viewTaskDetails.emit(task.id)">View</button></td>
+            <td>{{ task.userId }}</td>
+            <td>{{ task.id }}</td>
+            <td>{{ task.title }}</td>
+            <td>{{ task.completed ? 'Yes' : 'No' }}</td>
+          </tr>
+          
+      </tbody>
+    </table>
+  </div>
+  

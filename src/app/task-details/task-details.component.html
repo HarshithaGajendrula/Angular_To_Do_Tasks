@@ -1,0 +1,47 @@
+<!-- <div *ngIf="task">
+    <h2>Task Details</h2>
+    <p>UserId: {{ task.userId }}</p>
+    <p>Id: {{ task.id }}</p>
+    <p>Title: {{ task.title }}</p>
+    <p>Completed: {{ task.completed ? 'Yes' : 'No' }}</p>
+    <button (click)="backToTasks.emit()">Back</button>
+  </div>
+  <div *ngIf="!task">
+    <p>Task not found.</p>
+    <button (click)="backToTasks.emit()">Back</button>
+  </div>
+   -->
+
+   <div *ngIf="task" class="task-details-container">
+    <h2>Task Details</h2>
+    <table class="task-details-table">
+      <tr>
+        <th>Field</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>UserId:</td>
+        <td>{{ task.userId }}</td>
+      </tr>
+      <tr>
+        <td>Id:</td>
+        <td>{{ task.id }}</td>
+      </tr>
+      <tr>
+        <td>Title:</td>
+        <td>{{ task.title }}</td>
+      </tr>
+      <tr>
+        <td>Completed:</td>
+        <td>{{ task.completed ? 'Yes' : 'No' }}</td>
+      </tr>
+    </table>
+    <button (click)="backToTasks.emit()">Back</button>
+  </div>
+  
+  <div *ngIf="!task" class="task-details-container">
+    <p class="task-not-found">Task not found.</p>
+    <button (click)="backToTasks.emit()">Back</button>
+  </div>
+  
+  

@@ -1,0 +1,13 @@
+<app-login
+  *ngIf="currentView === 'login'"
+  (loginSuccess)="onLoginSuccess()"
+></app-login>
+<app-tasks
+  *ngIf="currentView === 'tasks'"
+  (viewTaskDetails)="onViewTaskDetails($event)"
+></app-tasks>
+<app-task-details
+  *ngIf="currentView === 'taskDetails'"
+  [task]="selectedTask"
+  (backToTasks)="onBackToTasks()"
+></app-task-details>

@@ -1,0 +1,186 @@
+/* .tasks-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tasks-container button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tasks-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .tasks-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .tasks-container th,
+  .tasks-container td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .tasks-container th {
+    background-color: #007bff;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .tasks-container td {
+    background-color: #f2f2f2;
+  }
+  
+  .tasks-container td button {
+    padding: 6px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tasks-container td button:hover {
+    background-color: #0056b3;
+  }
+   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+
+   .tasks-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tasks-container button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tasks-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .tasks-container .toggle-button {
+    margin-right: 10px; // Adjust the margin as needed 
+  }
+   */
+
+
+
+
+
+
+
+   .tasks-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tasks-container button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tasks-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .tasks-container .toggle-button {
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+  .tasks-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .tasks-container th,
+  .tasks-container td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .tasks-container th {
+    background-color: #007bff;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .tasks-container td {
+    text-align: center;
+  }
+  
+  .tasks-container tr.completed td {
+    background-color: #c7e2c7; /* Green background for completed tasks */
+  }
+  
+  .tasks-container tr.not-completed td {
+    background-color: #f3c3c3; /* Red background for not completed tasks */
+  }
+  

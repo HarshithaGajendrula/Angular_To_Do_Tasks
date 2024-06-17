@@ -1,0 +1,12 @@
+<div class="whole-container">
+    <h2>Login</h2>
+    <label for="username" class="lable-text">Username:</label>
+    <input type="text" id="username" [(ngModel)]="username" placeholder="Enter your username">
+    <br>
+    <label for="password" class="lable-text">Password:</label>
+    <input type="password" id="password" [(ngModel)]="password" placeholder="Enter your password">
+    <br>
+    <button (click)="login()">Login</button>
+    <div *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</div>
+  </div>
+  
